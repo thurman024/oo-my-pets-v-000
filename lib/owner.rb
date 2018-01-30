@@ -17,6 +17,10 @@ class Owner
     @@all_owners.size
   end
 
+  def self.reset_all
+    @@all_owners.clear
+  end
+
   def buy_fish(fish_name)
     new_fish = Fish.new(fish_name)
     self.pets[:fishes] << new_fish
