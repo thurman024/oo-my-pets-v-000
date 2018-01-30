@@ -1,7 +1,9 @@
 class Owner
   attr_accessor :pets
+  @@all_owners = 0
   def initialize
     @pets = {fishes: [], cats: [], dogs: []}
+    @@all_owners += 1
   end
 
   def buy_fish(fish_name)
