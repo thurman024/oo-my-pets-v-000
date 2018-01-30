@@ -4,7 +4,8 @@ class Owner
   @@owner_count = 0
   def initialize
     @pets = {fishes: [], cats: [], dogs: []}
-    
+    @@all_owners << self
+    @@owner_count += 1
   end
 
   #Class methods
