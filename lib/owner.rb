@@ -61,5 +61,6 @@ class Owner
     self.pets.each do |animal_type, pet_array|
       pet_array.each {|pet| pet.mood = "nervous"}
     end
+  end
 
 end
