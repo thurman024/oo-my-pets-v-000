@@ -64,4 +64,7 @@ class Owner
     end
   end
 
+  def list_pets
+    pet_count = self.pets.collect {|type, pets| pets.size}
+
 end
