@@ -5,7 +5,7 @@ class Owner
   # @@owner_count = 0
   def initialize(name)
     @name = name
-    @species = human
+    @species = "human"
     @pets = {fishes: [], cats: [], dogs: []}
     @@all_owners << self
     # @@owner_count += 1
@@ -45,5 +45,5 @@ class Owner
     self.pets[:dogs] << new_dog
   end
 
-  
+
 end
