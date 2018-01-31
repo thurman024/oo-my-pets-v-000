@@ -27,7 +27,7 @@ class Owner
   #instance methods
 
   def say_species
-    "I am a #{self.species}"
+    "I am a #{self.species}."
   end
 
   def buy_fish(fish_name)
