@@ -66,5 +66,5 @@ class Owner
 
   def list_pets
     pet_count = self.pets.collect {|type, pets| pets.size}
-
+    "I have #{pet_count[0]} fish, #{pet_count[1]} cat(s), and #{pet_count[2]} dog(s)."
 end
